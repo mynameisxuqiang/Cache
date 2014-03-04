@@ -8,7 +8,7 @@
 
 #import "Cache.h"
 //超时时间 5分钟
-#define TIME_OUT 60 * 5
+#define TIME_OUT (60 * 5)
 @implementation Cache
 
 //生成路径
