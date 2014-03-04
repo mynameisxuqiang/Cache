@@ -99,4 +99,11 @@
         return nil;
     }
 }
+#prama -mark 清除缓存
++ (BOOL) clearCache
+{
+    NSFileManager *manager = [NSFileManager defaultManager];
+    NSString *path = [NSString stringWithFormat:@"%@/Library/Caches/DataCache",NSHomeDirectory()];
+    return [manager removeItemAtPath:path error:nil];
+}
 @end

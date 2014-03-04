@@ -20,5 +20,6 @@
 
 //取缓存数据
 +(NSDictionary *)cacheForDictionaryWithName:(NSString *)name;
-
+//清除缓存
++ (BOOL) clearCache
 @end
